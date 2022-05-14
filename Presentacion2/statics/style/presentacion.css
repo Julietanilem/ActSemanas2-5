@@ -1,0 +1,170 @@
+/*fuentes
+------------------------------------------------------------------------------------------------------------*/
+@font-face{
+    font-family: "titulos";
+    src:("../fonts/Gayathri-Regular.ttf");
+}
+@font-face{
+    font-family: "normal";
+    src:("../fonts/Os.ttf");
+}
+/*body
+----------------------------------------------------------------------------*/
+body{
+    background-color: #ffbde780;
+}
+
+/*Header (titulo)
+----------------------------------------------------------------------------------------------------------------*/
+#titulo{
+    font-family: "titulos", "Georgia", "serif";
+    font-size: x-large;
+    color:#4f2931;
+    background-color: #FFA1C2;
+    position: relative;
+    width: 30vw;
+    height: 5vh;
+    top:4vh;
+    left:40vw;
+}
+/*Aside
+-----------------------------------------------------------------------------------------*/
+#barra{
+    background-color: #DD87E8;
+    background-image: url('https://i.pinimg.com/originals/10/70/20/1070203bb61709c7d97cc5f1bcaf8019.jpg');
+    background-size:auto;
+    width:25vw;
+    height: 100vh;
+    position: relative;
+    left: 0px;
+    top:0px;
+    position: fixed;
+    overflow: auto;
+}
+#imagenMia{
+    margin: 3vw;
+    margin-bottom: 0vw;
+}
+#presentación{
+    text-align: center;
+    font-family: 'normal', 'arial', 'sans-serif';
+    margin:2vw;
+}
+/*main
+---------------------------------------------------------------------------------------------------*/
+a:visited{
+    color:#8431F6;
+}
+a:link{
+    color:#8431F6;
+}
+main{
+    position:relative;
+    left:25vw;
+    top:5vh;
+    width: 50vw;
+}
+div{
+    position:absolute;
+    overflow: auto;
+    background-color: #E3A0E8;
+    font-family: 'normal', 'arial', 'sans-serif';
+    margin:2vw; 
+    text-align: center;
+    box-sizing: border-box;
+    border-style: dashed;
+    border-color: #FFB8B0;
+}
+div:hover{
+    background-color: #DFCAFF;
+}
+ol{
+    list-style-type:lower-greek;
+    list-style-position: inside;
+  
+}
+ul{
+    list-style-type: circle;
+    list-style-position: inside;
+    list-style-image:url("../../descarga.png");
+
+}
+.subtitulo1{
+    color:#DF6AF7;
+    background-color: beige;
+    font-family:  "titulos", "Georgia", "serif";
+    position: absolute;
+    left: 24vw;
+
+}
+.subtitulo{
+    position: relative;
+    top:0vw;
+    text-align: center;
+    color: #F76A97;
+    background-color: azure;
+}
+#crush{
+    position: absolute;
+    top:5vw;
+    left: 2vw;
+    width: 20vw;
+    height: 41vw;
+}
+#cantantes{
+    position: absolute;
+    top:5vw;
+    left: 23vw;
+    width: 20vw;
+    height: 20vw;
+    text-align:left ;
+}
+#canciones{
+    position: absolute;
+    top:5vw;
+    left: 44vw;
+    width: 20vw;
+    height: 20vw;
+    text-align:left ;
+}
+#pelis{
+    position: absolute;
+    top:26vw;
+    left: 44vw;
+    width: 20vw;
+    height: 20vw;
+    text-align:left ;
+}
+#temas{
+    position: absolute;
+    top:26vw;
+    left: 23vw;
+    width: 20vw;
+    height: 20vw;
+    text-align:left ;
+}
+#teams{
+    position:absolute;
+    top:106vh;
+}
+#nota{
+    position: absolute;
+    top: 115vh;
+    left: 20vw;
+}
+#frio{
+    position: relative;
+    top:54vw;
+    left:5vw;
+    width: 20vw;
+    height: 35vh;
+    background-color:#FFA1C2;
+}
+#bebida{
+    position: absolute;
+    top:52vw;
+    left:40vw;
+    width: 20vw;
+    height: 30vh;
+    background-color:#FFA1C2;
+}

@@ -44,6 +44,7 @@ body{
 #imagenMia{
     margin: 3vw;
     margin-bottom: 0vw;
+    margin-left: 5vw;
 }
 #presentación{
     text-align: center;
@@ -91,7 +92,7 @@ ol{
 ul{
     list-style-type: circle;
     list-style-position: inside;
-    list-style-image:url("../../descarga.png");
+    list-style-image:url("../img/descarga.png");
 
 }
 .subtitulo1{

@@ -50,6 +50,11 @@ body{
     font-family: 'normal', 'arial', 'sans-serif';
     margin:2vw;
 }
+#hobby{
+    background-color: #b8a1ffa4;
+    text-align: center;
+    font-family: 'normal', 'arial', 'sans-serif';
+}
 /*main
 ---------------------------------------------------------------------------------------------------*/
 a:visited{
@@ -159,6 +164,8 @@ ul{
     width: 20vw;
     height: 35vh;
     background-color:#FFA1C2;
+    border-style:dotted;
+    border-color:#8431F6;
 }
 #bebida{
     position: absolute;
@@ -167,4 +174,6 @@ ul{
     width: 20vw;
     height: 30vh;
     background-color:#FFA1C2;
+    border-style:dotted;
+    border-color:#8431F6;
 }

@@ -1,13 +1,13 @@
 class Campeones{
-    constructor(vida, ataque, mana, nombre, habilidades, esFuerteContra1, esFuerteContra2, tipo){
+    constructor(vida, ataque, mana, nombre,...habilidades){
         this.vida= vida;
         this.ataque = ataque;
         this.mana = mana ;
         this.nombre = nombre;
         this.habilidades =habilidades;
-        this.esFuerteContra1 = esFuerteContra1;
-        this.esFuerteContra2 = esFuerteContra2; 
-        this.tipo = tipo;
+        this.esFuerteContra1 = 'tanque';
+        this.esFuerteContra2 = 'tirador'; 
+        this.tipo = 'campeon' ;
         this.extra=false;
         this.extraValor=0;
     };
@@ -43,65 +43,80 @@ class Campeones{
 };
 
 class Mago extends Campeones{
-    constructor(vida, ataque, mana, nombre, habilidades,distancia, esFuerteContra1='tirador', esFuerteContra2='luchador', tipo='mago'){
-        super ( vida, ataque, mana, nombre, habilidades,esFuerteContra1, esFuerteContra2, tipo);
+    constructor(vida, ataque, mana, nombre,distancia, ...habilidades){
+        super ( vida, ataque, mana, nombre, habilidades);
         this.distancia=distancia;
         this.mana =this.mana+(this.mana*0.24);
         this.extra='distancia';
         this.extraValor=distancia;
+        this.esFuerteContra1='tirador';
+        this.esFuerteContra2='luchador';
+        this.tipo='mago';
     };
   
 };
-
-
 class Tanque extends Campeones{
-    constructor(vida, ataque, mana, nombre, habilidades, armadura, esFuerteContra1='mago', esFuerteContra2='asesino', tipo='tanque'){
-        super ( vida, ataque, mana, nombre, habilidades, esFuerteContra1, esFuerteContra2, tipo);
+    constructor(vida, ataque, mana, nombre, armadura, ...habilidades){
+        super ( vida, ataque, mana, nombre, habilidades);
         this.armadura=armadura;
         this.vida =this.vida+(this.vida*0.24);
         this.extra='armadura';
         this.extraValor=armadura;
+        this.esFuerteContra1='mago';
+        this.esFuerteContra2='asesino';
+        this.tipo='tanque'
     };
   
 };
 
 class Luchador extends Campeones{
-    constructor(vida, ataque, mana, nombre, habilidades, esFuerteContra1='asesino', esFuerteContra2='tanque', tipo='luchador'){
-        super ( vida, ataque, mana, nombre, habilidades, esFuerteContra1, esFuerteContra2, tipo);
+    constructor(vida, ataque, mana, nombre, ...habilidades){
+        super ( vida, ataque, mana, nombre, habilidades);
         this.vida =this.vida+(this.vida*0.15);
         this.ataque =this.ataque+(this.ataque*0.15);
         this.extra=false;
         this.extraValor=false;
+        this.esFuerteContra1='asesino';
+        this.esFuerteContra2='tanque';
+        this.tipo='luchador';
     };
   
 };
 class Tirador extends Campeones{
-    constructor(vida, ataque, mana, nombre, habilidades, distancia, esFuerteContra1='tanque', esFuerteContra2='luchador',tipo='tirador'){
-        super ( vida, ataque, mana, nombre, habilidades,esFuerteContra1, esFuerteContra2, tipo);
+    constructor(vida, ataque, mana, nombre, distancia, ...habilidades){
+        super ( vida, ataque, mana, nombre, habilidades)
         this.distancia=distancia;
         this.ataque =this.ataque+(this.ataque*0.24);
         this.extra='distancia';
         this.extraValor=distancia;
+        this.esFuerteContra1='tanque';
+        this.esFuerteContra2='luchador'; 
+        this.tipo='tirador';
+
+
     };
   
 };
 
 class Asesino extends Campeones{
-    constructor(vida, ataque, mana, nombre, habilidades, movilidad, esFuerteContra1='mago', esFuerteContra2='tirador', tipo='asesino'){
-        super ( vida, ataque, mana, nombre, habilidades, esFuerteContra1, esFuerteContra2, tipo);
+    constructor(vida, ataque, mana, nombre, movilidad, ...habilidades ){
+        super ( vida, ataque, mana, nombre, habilidades);
         this.vida =this.vida-(this.vida*0.05);
         this.ataque =this.ataque+(this.ataque*0.30);
         this.extra='movilidad';
         this.extraValor=movilidad;
+        this.esFuerteContra1='mago';
+        this.esFuerteContra2='tirador';;
+        this.tipo='asesino';
     };
   
 };
 
 
 //Instancias
-const petra= new Mago (12, 112, 44, 'Petra', ['saltar', 'correr'],213);
-const blub = new Tanque (123, 23, 243, 'Blub', ['volar', 'aniquilar'],14);
-const lucha = new Luchador (187, 4, 23, 'Lucha', ['resitencia', 'apoyo']);
-const Verd = new Tirador (21, 123, 121, 'Verd', ['municiones', 'refuerzo']);
-const Andy = new Asesino (78, 547, 234, 'Andy', ['agresividad', 'agilidad'],98);
-const Roco = new Asesino (19, 38, 18, 'Roco', ['suerte', 'temido'],543);
+const petra= new Mago (12, 112, 44, 'Petra', 213, 'saltar', 'correr',);
+const blub = new Tanque (123, 23, 243, 'Blub',14, 'volar', 'aniquilar');
+const lucha = new Luchador (187, 4, 23, 'Lucha', 'resitencia', 'apoyo');
+const Verd = new Tirador (21, 123, 121, 'Verd', 'municiones', 'refuerzo');
+const Andy = new Asesino (78, 547, 234, 'Andy',98, 'agresividad', 'agilidad');
+const Roco = new Asesino (19, 38, 18, 'Roco', 567, 'suerte', 'temido', 'bueno con las armas');

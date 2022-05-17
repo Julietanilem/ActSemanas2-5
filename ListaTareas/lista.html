@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="./statics/style/estilo.css">
+</head>
+<body>
+    <form id="form" method="post">
+        <h1>Lista de tareas</h1>
+        <input id="tareaInput" class="texto" name="tarea" type="text" placeholder="Escribe tu tarea" required/><br><br>
+        <select id="materia">
+            <option value="Matemáticas">Matemáticas</option>
+            <option value="Literatura">Literatura</option>
+            <option value="Química">Química</option>
+            <option value="Biología">Biología</option>
+            <option value="Otra">Otra</option>
+        </select><br><br>
+        <br><button type="button" id="crear" >Crear</button><br>
+    </form>
+    <div id="tareas">
+        <h1>Tareas:</h1>
+        <ul id="lista">
+
+        </ul>
+    </div>
+    <script src="./dynamics/lista.js"></script>
+</body>
+</html>

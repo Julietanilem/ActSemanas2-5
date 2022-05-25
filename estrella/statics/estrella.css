@@ -1,0 +1,42 @@
+body{
+    background-color: #A1D98F;
+    display:flex;
+    width: 100vw;
+    height: 150vh;
+    flex-direction: column;
+    justify-content: center;
+}
+/* cuadrado 
+-------------------------------------------------------------*/
+h1{
+    width: 700px ;
+    position:absolute;
+    top: 10vh;
+    left: 38vw;
+}
+#cuadro{
+    width: 50vw;
+    height: 200vh;
+    justify-content: center;
+    background-color: #A4F8DB;
+    display:flex;
+    align-self: center;
+    border-radius: 15%;
+
+}
+#estrella{
+    width: 500px;
+    height:500px;
+    background-color: aliceblue;
+    align-self: center;
+    justify-content: center;
+  
+}
+#ajuste{
+    
+  
+
+    position:absolute;
+    bottom: -40vh;
+    left: 28vw;
+}

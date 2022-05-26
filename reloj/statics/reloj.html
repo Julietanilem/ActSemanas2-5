@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarma</title>
+    <link rel="stylesheet" href="../libs/bootstrap/bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./reloj.css">
+</head>
+<body>
+  <h1>Temporizador :</h1>
+    <!-- Button trigger modal -->
+    
+<h1 type="button" class="boton" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="tempo">00:00:00
+</h1>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Establece el tiempo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="number" class="cuadritoHora" id="horas" placeholder="HH" min="0" >: 
+          <input type="number"class="cuadritoHora" id="minutos" placeholder="MM" min="0" max="59">: 
+          <input type="number" class="cuadritoHora" id="segundos" placeholder="SS" min="0" max="59">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="guardar">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <canvas width="500px" height="500px"  id="circulo"></canvas>
+  <button id="inicio" class="boton">Inicio</button>
+  <button id="parar" class="boton">Detener</button>
+
+
+  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js "></script>
+  <script src="../dynamics/reloj.js"></script>
+</body>
+</html>

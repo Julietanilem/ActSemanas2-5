@@ -1,0 +1,72 @@
+body{
+    background-color: #a3d9e3bf;
+}
+h1{
+    text-align: center;
+}
+.boton{
+    height: 3vw;
+    width: 8vw;
+    border-radius: 5%;
+    border-color:#A3D9E3;
+    background-color:#B6BAFD;
+    
+}
+.boton:hover{
+    background-color:blanchedalmond;
+    border-radius: 15%;
+    border-color: #B6FDF4;
+}
+.cuadritoHora{
+    width: 9vw;
+}
+#circulo{
+    position: relative;
+    left: 28vw;
+    top: -6vw;
+    width: 40vw;
+    height: 40vw;
+}
+
+#tempo{
+    background-color: #BFE1F9;
+    color: black;
+    border-color:white ;
+    font-size: 4vw;
+    font-weight: bolder;
+    position:relative;
+    left:41vw;
+    top:15vw;
+    z-index: 2;
+}
+#tempo:hover{
+    color:antiquewhite;
+    font-size: 4vw;
+    font-weight: bolder;
+
+}
+
+#parar{
+    position: relative;
+    top:-10vh;
+    display: inline;
+    left:4vw;
+    /* left: ; */
+}
+
+#inicio{
+    position: relative;
+    top:-10vh;
+    display: inline;
+ 
+    left:-3vw;
+
+}
+#parar:hover{
+    height: 5vw;
+    width: 10vw;
+}
+#inicio:hover{
+    height: 5vw;
+    width: 10vw;
+}

@@ -112,7 +112,6 @@ function temporizador (milisec){
     segImp=segundos;
     minImp=minutos;
     horImp=horas;
-    var acabado;
     imprimible(horImp, minImp, segImp);
     
     milisecCuenta=0;

@@ -140,7 +140,6 @@ function temporizador (milisec){
             {
                 clearInterval(segtemp);
                 tempo.innerHTML="00:00:00";
-                acabado=true;
                 alarma.volume=0.5;
                 alarma.play();
                 alarma.muted=false;
@@ -150,12 +149,6 @@ function temporizador (milisec){
         }, 1000) 
 
 
-
-        if(acabado==true)
-        {
-            //alarma
-            acabado=false;
-        }
 
 };
 
@@ -174,7 +167,7 @@ inSec.addEventListener("change", ()=>{
 });
 boton.addEventListener("click", ()=>{
     clearInterval(segtemp);
-    
+    alarma.muted=true;
     milisec=milisegundos();
     if(milisec>0)
     {    
@@ -185,7 +178,7 @@ boton.addEventListener("click", ()=>{
 });
 guardar.addEventListener("click", ()=>{
     asigTiempo();
-    
+    alarma.muted=true;
     clearInterval(segtemp);
     imprimible(horas,minutos , segundos);
 

@@ -141,7 +141,7 @@ function temporizador (milisec){
                 clearInterval(segtemp);
                 tempo.innerHTML="00:00:00";
                 acabado=true;
-                alarma.volume=0.05;
+                alarma.volume=0.5;
                 alarma.play();
                 alarma.muted=false;
 

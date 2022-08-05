@@ -9,6 +9,7 @@ if(!$con)
 }
 else
 {
+ 
   $sql = "SELECT * FROM types";
   $res = mysqli_query($con, $sql);
   $resultados = [];

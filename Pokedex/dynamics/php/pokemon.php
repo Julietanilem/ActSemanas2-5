@@ -27,7 +27,11 @@ else{
   {
     $query = $_GET['id'];
     $sql="SELECT pok_imagen from pokemon";
-    $res = mysqli_query($con,$sql);
+    try{
+      $res = mysqli_query($con,$sql);
+    }catch(Exception $e){
+      $res = false;
+    }
     if($res == false)
     {
         $sql="ALTER TABLE pokemon ADD pok_imagen varchar(100)";

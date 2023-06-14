@@ -142,6 +142,8 @@ window.addEventListener("load", () => {
             divDatos.innerHTML += "<div class='dato'><h3>Tipo</h3>" + datosJSON.datos.tipo + "</div>";
             if (datosJSON.datos.ruta != null && datosJSON.datos.ruta != undefined) { 
               divDatos.innerHTML += "<div class='dato'><h3>Imagen</h3><img src='" + datosJSON.datos.ruta +"' alt='Aun no hay imagen, puedes subir una al actualizar :)' height='100vh'> </div>";
+            }else{
+              divDatos.innerHTML += "<div class='dato'><h3>Imagen</h3>Aun no hay imagen</div>";
             }
             divDatos.innerHTML += "<button data-id='" + id + "' id='btn-eliminar'>Eliminar pokemon</button>";
             divDatos.innerHTML += "<button data-id='" + id + "' id='btn-actualizar'>Actualizar pokemon</button>"
